@@ -9,7 +9,7 @@ if ($file_handle) {
     $eur_buying = $exchanges->Currency[3]->BanknoteBuying;
     $eur_selling = $exchanges->Currency[3]->BanknoteSelling;
     fclose($file_handle);
-    $sql = "UPDATE exchanges SET usd_buying = ?, usd_selling = ?, eur_buying = ?, eur_selling = ?";
+    $sql = "UPDATE exchanges SET usd_buying = ?, usd_selling = ?, eur_buying = ?, eur_selling = ?, last_update = NOW()";
     $stmt = $dbConnect->prepare($sql);
     $stmt->execute([$usd_buying, $usd_selling, $eur_buying, $eur_selling]);
 } else {
