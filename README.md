@@ -2,6 +2,8 @@ Kendim için PHP ile TCMB döviz kurlarını anlık olarak çekmek, canlı veriy
 
 Veritabanınızda 'exchanges' adlı bir tablo olmalı ve bu tabloya id (int), usd_buying (double), usd_selling (double), eur_buying (double), eur_selling (double) sütunları eklenmiş olmalı. Bu tabloya önceden tek satırlık bir veri elle eklenmiş olmalı. Bunları aşağıdaki SQL komutuyla gerçekleştirebilirsiniz.
 
+X'te @gurolcaydas önerisi ile son güncelleme tarihini bilmek için tarih sütunu ekledim.
+
 ~~~
 DROP TABLE IF EXISTS exchanges;
 CREATE TABLE exchanges (
