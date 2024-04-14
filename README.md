@@ -12,3 +12,5 @@ CREATE TABLE exchanges (
 );
 INSERT INTO exchanges SET usd_buying = 0, usd_selling = 0, eur_buying = 0, eur_selling = 0;
 ~~~
+
+Ayrıca, X (Twitter)'de @redfox_tr önerisi ile CURL ile çalışan ikinci bir dosya ekledim. Bu dosya da çektiği kurları, belirttiğiniz yoldaki dosyaya XML olarak kaydeder ve buradan dilediğiniz kurun değerlerini çekebilirsiniz.
