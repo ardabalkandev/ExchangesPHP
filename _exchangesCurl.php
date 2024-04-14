@@ -30,6 +30,6 @@ function getRates() {
     ];
 }
 
-foreach(getRates() as $key => $value) {
-    echo $key." ".$value."<br>";
-}
+// usage example
+$rates = getRates();
+$usd_buying = $rates['usd_buying'];
